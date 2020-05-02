@@ -1,43 +1,62 @@
-import * as React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 
 type Props = {
-  title?: string
-}
+  title?: string;
+};
 
-const Layout: React.FunctionComponent<Props> = ({
-  children,
-  title = 'This is the default title',
-}) => (
+const Layout: React.FC<Props> = ({ children, title = 'welcome' }) => (
   <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="manifest" href="/static/manifest.json" />
+      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link rel="stylesheet" href="/static/css/default.css" />
+      <link rel="stylesheet" href="/static/css/layout.css" />
+      <link rel="stylesheet" href="/static/css/media-queries.css" />
+      <link rel="stylesheet" href="/static/css/magnific-popup.css" />
     </Head>
     <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+      <nav id="nav-wrap">
+        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+          Show navigation
+        </a>
+        <a className="mobile-btn" href="#home" title="Hide navigation">
+          Hide navigation
+        </a>
+
+        <ul id="nav" className="nav">
+          <li className="current">
+            <a className="smoothscroll" href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="/resume">
+              Resume
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="/portfolio">
+              Works
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
+    <div className="content">{children}</div>
   </div>
-)
+);
 
-export default Layout
+export default Layout;
