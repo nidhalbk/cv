@@ -1,3 +1,4 @@
 import React from 'react';
+import Works from 'components/TimeLine/Works';
 
-export default () => <div> works page </div>;
+export default () => <Works/>;

@@ -7,4 +7,4 @@
 // eslint-disable-next-line import/extensions
 import dynamic from 'next/dynamic';
 
-export default dynamic(() => import('./TimeLineElement'), { ssr: false });
+export default dynamic(() => import('./TimeLine'), { ssr: false });

@@ -1,7 +1,9 @@
 import React from 'react';
 import App from 'next/app';
-import 'react-vertical-timeline-component/style.min.css';
+// import 'react-vertical-timeline-component/style.min.css';
+// import 'react-vertical-timeline-component/docs/vertical-load-more.css';
 import Layout from 'components/Layout';
+import 'purecss/build/pure.css';
 // import Router from 'next/router';
 // import NProgress from 'nprogress';
 //

@@ -45,6 +45,7 @@ header {
 }
 
 .content {
+    padding-top: 20px;
     height: 95vh;
     text-align: center;
 }
@@ -55,6 +56,11 @@ header:before {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
+}
+
+.background-nav{
+    background-color: #000;
+    border-bottom: #FFF solid;
 }
 
 .content > * {

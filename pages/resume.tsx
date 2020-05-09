@@ -1,4 +1,7 @@
 import React from 'react';
-import TimeLine from 'components/TimeLine';
+import Resume from 'components/TimeLine/Resume';
+// import dynamic from 'next/dynamic';
 
-export default () => <TimeLine />;
+// const TimeLine = dynamic(() => import('components/Resume'));
+
+export default () => <Resume />;
