@@ -1004,6 +1004,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@brainhubeu/react-carousel@^1.13.46":
+  version "1.13.46"
+  resolved "https://registry.yarnpkg.com/@brainhubeu/react-carousel/-/react-carousel-1.13.46.tgz#1e83c5c21e48845a5055533b72a8d00a26849d0b"
+  integrity sha512-U2q9YvMm/3amF4Not6EgnmTtwiPAX5kG9dS+N1y00JXEGu2pknwUkt4niibuH9Hl6Q6hcB99RRx2R0hF64iPGA==
+
 "@emotion/hash@^0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
@@ -1114,6 +1119,13 @@
   dependencies:
     "@types/connect" "*"
     "@types/node" "*"
+
+"@types/brainhubeu__react-carousel@^1.13.1":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@types/brainhubeu__react-carousel/-/brainhubeu__react-carousel-1.13.1.tgz#99e5391d26ed9207495af612a489060aee004017"
+  integrity sha512-fdIo4rvC7shnNW5pKPlbiXO/euQ1u/DPJkFG0lq7HJEk/4cUCbzRYzShlzKh+rp4G24PDyVoB03UN3rHIxDXbg==
+  dependencies:
+    "@types/react" "*"
 
 "@types/connect@*":
   version "3.4.33"
