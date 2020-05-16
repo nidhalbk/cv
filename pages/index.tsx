@@ -9,7 +9,7 @@ const IndexPage = () => (
     <ParticlesBg />
     <div className="banner-text">
       <h1 className="responsive-headline">NBK</h1>
-      <h3>Sinior full stack JS/PHP developper.</h3>
+      <h3>Senior full stack JS/PHP developper.</h3>
       <hr />
       <ul className="social">
         {/* eslint-disable-next-line react/jsx-no-target-blank */}
