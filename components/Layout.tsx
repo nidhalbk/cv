@@ -16,6 +16,7 @@ function Layout({ children, title = 'welcome', router: { pathname } }: Props) {
     }
   }, [pathname]);
 
+  // @ts-ignore
   return (
     <div>
       <Head>
@@ -31,12 +32,8 @@ function Layout({ children, title = 'welcome', router: { pathname } }: Props) {
         <link rel="stylesheet" href="/static/css/magnific-popup.css" />
         <link rel="stylesheet" href="/static/css/TimeLine.css" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQJE8LRK9G"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-MQJE8LRK9G');
+        // @ts-ignore
+        <script>{injectGA()}
         </script>
       </Head>
       <header>
@@ -71,5 +68,21 @@ function Layout({ children, title = 'welcome', router: { pathname } }: Props) {
     </div>
   );
 }
+const injectGA = () => {
+  if (typeof window == 'undefined') {
+    return;
+  }
+  // @ts-ignore
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    // @ts-ignore
+    window.dataLayer.push(arguments);
+  }
+  // @ts-ignore
+  gtag('js', new Date());
+
+  // @ts-ignore
+  gtag('config', 'G-MQJE8LRK9G');
+};
 
 export default withRouter(Layout);
