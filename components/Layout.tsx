@@ -30,6 +30,14 @@ function Layout({ children, title = 'welcome', router: { pathname } }: Props) {
         <link rel="stylesheet" href="/static/css/media-queries.css" />
         <link rel="stylesheet" href="/static/css/magnific-popup.css" />
         <link rel="stylesheet" href="/static/css/TimeLine.css" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQJE8LRK9G"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-MQJE8LRK9G');
+        </script>
       </Head>
       <header>
         <nav id="nav-wrap" className={background}>

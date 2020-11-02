@@ -1270,3 +1270,7 @@ footer .social-links li:first-child {
 .github-btn {
     background-color: #34495e !important;
 }
+
+#home canvas{
+    position: fixed !important;
+}

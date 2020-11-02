@@ -7,14 +7,27 @@ import Wrapper from './wrapper';
 
 const timelineElements = [
   <VerticalTimelineElement
-    // @ts-ignore
-    // onTimelineElementClick={() => {
-    //   alert('onTimelineElementClick event fired');
-    // }}
+      // @ts-ignore
+      // onTimelineElementClick={() => {
+      //   alert('onTimelineElementClick event fired');
+      // }}
+      className="vertical-timeline-element--work"
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      date="07/2020 - present"
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">
+      Scrum master
+    </h3>
+    <p>Pixels Trade, Ariana (Tunisia)</p>
+  </VerticalTimelineElement>,
+  <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="07/2018 - present"
+    date="07/2018 - 05/2020"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
   >
